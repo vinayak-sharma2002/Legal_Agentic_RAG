@@ -124,7 +124,7 @@ if uploaded_files:
             tools=[doc_tool, web_tool],
             llm=llm,
             agent=AgentType.STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION,
-            verbose=True,
+            verbose=False,
             handle_parsing_errors=True,
             max_iterations=50,
             max_execution_time=120,            
