@@ -49,7 +49,7 @@ def load_and_split(file_path):
         raise ValueError("Unsupported file format")
 
     docs = loader.load()
-    splitter = RecursiveCharacterTextSplitter(chunk_size=300, chunk_overlap=50)
+    splitter = RecursiveCharacterTextSplitter(chunk_size=600, chunk_overlap=100)
     return splitter.split_documents(docs)
 
 # ---- Streamlit UI ----
